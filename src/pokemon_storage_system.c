@@ -153,6 +153,9 @@ enum {
     MENU_SPACE,
     MENU_BACKYARD,
     MENU_TORCHIC,
+    MENU_SINNOH_STARTERS,
+    MENU_PIKAPIKA,
+    MENU_TIMESPACE,
 };
 #define MENU_WALLPAPER_SETS_START MENU_WALLPAPERS_1
 #define MENU_WALLPAPERS_START MENU_FOREST
@@ -4379,6 +4382,9 @@ static void AddWallpapersMenu(u8 wallpaperSet)
         SetMenuText(MENU_TORCHIC);
         break;
     case MENU_WALLPAPERS_4 - MENU_WALLPAPER_SETS_START:
+        SetMenuText(MENU_SINNOH_STARTERS);
+        SetMenuText(MENU_PIKAPIKA);
+        SetMenuText(MENU_TIMESPACE);
         break;
     case MENU_WALLPAPERS_5 - MENU_WALLPAPER_SETS_START:
         break;
@@ -7995,6 +8001,9 @@ static const u8 *const sMenuTexts[] =
     [MENU_SPACE]      = gPCText_Space,
     [MENU_BACKYARD]   = gPCText_Backyard,
     [MENU_TORCHIC]    = gPCText_Torchic,
+    [MENU_SINNOH_STARTERS] = gPCText_SinnohStarters,
+    [MENU_PIKAPIKA]   = gPCText_PikaPika,
+    [MENU_TIMESPACE]  = gPCText_TimeSpace,
 };
 
 static void SetMenuText(u8 textId)

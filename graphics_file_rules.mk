@@ -572,6 +572,15 @@ $(WALLPAPERGFXDIR)/backyard/tiles.4bpp: $(WALLPAPERGFXDIR)/backyard/bg.4bpp
 $(WALLPAPERGFXDIR)/torchic/tiles.4bpp: $(WALLPAPERGFXDIR)/torchic/bg.4bpp
 	@cat $^ >$@
 
+$(WALLPAPERGFXDIR)/sinnohstarters/tiles.4bpp: $(WALLPAPERGFXDIR)/sinnohstarters/bg.4bpp
+	@cat $^ >$@
+
+$(WALLPAPERGFXDIR)/pikapika/tiles.4bpp: $(WALLPAPERGFXDIR)/pikapika/bg.4bpp
+	@cat $^ >$@
+
+$(WALLPAPERGFXDIR)/timespace/tiles.4bpp: $(WALLPAPERGFXDIR)/timespace/bg.4bpp
+	@cat $^ >$@
+
 
 $(WALLPAPERGFXDIR)/friends_frame1.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 57
