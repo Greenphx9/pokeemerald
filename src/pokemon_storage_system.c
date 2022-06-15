@@ -143,7 +143,7 @@ enum {
     MENU_SEAFLOOR,
     MENU_RIVER,
     MENU_SKY,
-    MENU_POLKADOT,
+    MENU_CHECKS,
     MENU_POKECENTER,
     MENU_MACHINE,
     MENU_SIMPLE,
@@ -4358,7 +4358,7 @@ static void AddWallpapersMenu(u8 wallpaperSet)
         SetMenuText(MENU_SEAFLOOR);
         SetMenuText(MENU_RIVER);
         SetMenuText(MENU_SKY);
-        SetMenuText(MENU_POLKADOT);
+        SetMenuText(MENU_CHECKS);
         SetMenuText(MENU_POKECENTER);
         break;
     case MENU_SCENERY_3 - MENU_WALLPAPER_SETS_START:
@@ -7970,7 +7970,7 @@ static const u8 *const sMenuTexts[] =
     [MENU_SEAFLOOR]   = gPCText_Seafloor,
     [MENU_RIVER]      = gPCText_River,
     [MENU_SKY]        = gPCText_Sky,
-    [MENU_POLKADOT]   = gPCText_PolkaDot,
+    [MENU_CHECKS]     = gPCText_Checks,
     [MENU_POKECENTER] = gPCText_Pokecenter,
     [MENU_MACHINE]    = gPCText_Machine,
     [MENU_SIMPLE]     = gPCText_Simple,

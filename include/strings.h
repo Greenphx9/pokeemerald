@@ -2042,7 +2042,7 @@ extern const u8 gPCText_Beach[];
 extern const u8 gPCText_Seafloor[];
 extern const u8 gPCText_River[];
 extern const u8 gPCText_Sky[];
-extern const u8 gPCText_PolkaDot[];
+extern const u8 gPCText_Checks[];
 extern const u8 gPCText_Pokecenter[];
 extern const u8 gPCText_Machine[];
 extern const u8 gPCText_Simple[];

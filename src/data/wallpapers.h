@@ -11,7 +11,7 @@ enum {
     WALLPAPER_SEAFLOOR,
     WALLPAPER_RIVER,
     WALLPAPER_SKY,
-    WALLPAPER_POLKADOT,
+    WALLPAPER_CHECKS,
     WALLPAPER_POKECENTER,
     WALLPAPER_MACHINE,
     WALLPAPER_PLAIN,
@@ -78,7 +78,7 @@ static const u32 sWallpaperTilemap_Snow[] = INCBIN_U32("graphics/pokemon_storage
 
 static const u16 sWallpaperPalettes_Cave[][16] =
 {
-    INCBIN_U16("graphics/pokemon_storage/wallpapers/cave/frame.gbapal"),
+    INCBIN_U16("graphics/pokemon_storage/wallpapers/cave/bg.gbapal"),
     INCBIN_U16("graphics/pokemon_storage/wallpapers/cave/bg.gbapal"),
 };
 static const u32 sWallpaperTiles_Cave[] = INCBIN_U32("graphics/pokemon_storage/wallpapers/cave/tiles.4bpp.lz");
@@ -86,7 +86,7 @@ static const u32 sWallpaperTilemap_Cave[] = INCBIN_U32("graphics/pokemon_storage
 
 static const u16 sWallpaperPalettes_Beach[][16] =
 {
-    INCBIN_U16("graphics/pokemon_storage/wallpapers/beach/frame.gbapal"),
+    INCBIN_U16("graphics/pokemon_storage/wallpapers/beach/bg.gbapal"),
     INCBIN_U16("graphics/pokemon_storage/wallpapers/beach/bg.gbapal"),
 };
 static const u32 sWallpaperTiles_Beach[] = INCBIN_U32("graphics/pokemon_storage/wallpapers/beach/tiles.4bpp.lz");
@@ -94,7 +94,7 @@ static const u32 sWallpaperTilemap_Beach[] = INCBIN_U32("graphics/pokemon_storag
 
 static const u16 sWallpaperPalettes_Seafloor[][16] =
 {
-    INCBIN_U16("graphics/pokemon_storage/wallpapers/seafloor/frame.gbapal"),
+    INCBIN_U16("graphics/pokemon_storage/wallpapers/seafloor/bg.gbapal"),
     INCBIN_U16("graphics/pokemon_storage/wallpapers/seafloor/bg.gbapal"),
 };
 static const u32 sWallpaperTiles_Seafloor[] = INCBIN_U32("graphics/pokemon_storage/wallpapers/seafloor/tiles.4bpp.lz");
@@ -102,30 +102,30 @@ static const u32 sWallpaperTilemap_Seafloor[] = INCBIN_U32("graphics/pokemon_sto
 
 static const u16 sWallpaperPalettes_River[][16] =
 {
-    INCBIN_U16("graphics/pokemon_storage/wallpapers/river/frame.gbapal"),
+    INCBIN_U16("graphics/pokemon_storage/wallpapers/river/bg.gbapal"),
     INCBIN_U16("graphics/pokemon_storage/wallpapers/river/bg.gbapal"),
 };
 static const u32 sWallpaperTiles_River[] = INCBIN_U32("graphics/pokemon_storage/wallpapers/river/tiles.4bpp.lz");
 static const u32 sWallpaperTilemap_River[] = INCBIN_U32("graphics/pokemon_storage/wallpapers/river/tilemap.bin.lz");
 static const u16 sWallpaperPalettes_Sky[][16] =
 {
-    INCBIN_U16("graphics/pokemon_storage/wallpapers/sky/frame.gbapal"),
+    INCBIN_U16("graphics/pokemon_storage/wallpapers/sky/bg.gbapal"),
     INCBIN_U16("graphics/pokemon_storage/wallpapers/sky/bg.gbapal"),
 };
 static const u32 sWallpaperTiles_Sky[] = INCBIN_U32("graphics/pokemon_storage/wallpapers/sky/tiles.4bpp.lz");
 static const u32 sWallpaperTilemap_Sky[] = INCBIN_U32("graphics/pokemon_storage/wallpapers/sky/tilemap.bin.lz");
 
-static const u16 sWallpaperPalettes_PolkaDot[][16] =
+static const u16 sWallpaperPalettes_Checks[][16] =
 {
-    INCBIN_U16("graphics/pokemon_storage/wallpapers/polkadot/frame.gbapal"),
-    INCBIN_U16("graphics/pokemon_storage/wallpapers/polkadot/bg.gbapal"),
+    INCBIN_U16("graphics/pokemon_storage/wallpapers/checks/bg.gbapal"),
+    INCBIN_U16("graphics/pokemon_storage/wallpapers/checks/bg.gbapal"),
 };
-static const u32 sWallpaperTiles_PolkaDot[] = INCBIN_U32("graphics/pokemon_storage/wallpapers/polkadot/tiles.4bpp.lz");
-static const u32 sWallpaperTilemap_PolkaDot[] = INCBIN_U32("graphics/pokemon_storage/wallpapers/polkadot/tilemap.bin.lz");
+static const u32 sWallpaperTiles_Checks[] = INCBIN_U32("graphics/pokemon_storage/wallpapers/checks/tiles.4bpp.lz");
+static const u32 sWallpaperTilemap_Checks[] = INCBIN_U32("graphics/pokemon_storage/wallpapers/checks/tilemap.bin.lz");
 
 static const u16 sWallpaperPalettes_Pokecenter[][16] =
 {
-    INCBIN_U16("graphics/pokemon_storage/wallpapers/pokecenter/frame.gbapal"),
+    INCBIN_U16("graphics/pokemon_storage/wallpapers/pokecenter/bg.gbapal"),
     INCBIN_U16("graphics/pokemon_storage/wallpapers/pokecenter/bg.gbapal"),
 };
 static const u32 sWallpaperTiles_Pokecenter[] = INCBIN_U32("graphics/pokemon_storage/wallpapers/pokecenter/tiles.4bpp.lz");
@@ -133,7 +133,7 @@ static const u32 sWallpaperTilemap_Pokecenter[] = INCBIN_U32("graphics/pokemon_s
 
 static const u16 sWallpaperPalettes_Machine[][16] =
 {
-    INCBIN_U16("graphics/pokemon_storage/wallpapers/machine/frame.gbapal"),
+    INCBIN_U16("graphics/pokemon_storage/wallpapers/machine/bg.gbapal"),
     INCBIN_U16("graphics/pokemon_storage/wallpapers/machine/bg.gbapal"),
 };
 static const u32 sWallpaperTiles_Machine[] = INCBIN_U32("graphics/pokemon_storage/wallpapers/machine/tiles.4bpp.lz");
@@ -141,7 +141,7 @@ static const u32 sWallpaperTilemap_Machine[] = INCBIN_U32("graphics/pokemon_stor
 
 static const u16 sWallpaperPalettes_Plain[][16] =
 {
-    INCBIN_U16("graphics/pokemon_storage/wallpapers/plain/frame.gbapal"),
+    INCBIN_U16("graphics/pokemon_storage/wallpapers/plain/bg.gbapal"),
     INCBIN_U16("graphics/pokemon_storage/wallpapers/plain/bg.gbapal"),
 };
 static const u32 sWallpaperTiles_Plain[] = INCBIN_U32("graphics/pokemon_storage/wallpapers/plain/tiles.4bpp.lz");
@@ -165,7 +165,7 @@ static const u16 sBoxTitleColors[WALLPAPER_COUNT][2] =
     [WALLPAPER_SEAFLOOR]   = {RGB(7, 7, 7), RGB_WHITE},
     [WALLPAPER_RIVER]      = {RGB(7, 7, 7), RGB_WHITE},
     [WALLPAPER_SKY]        = {RGB(7, 7, 7), RGB_WHITE},
-    [WALLPAPER_POLKADOT]   = {RGB(7, 7, 7), RGB_WHITE},
+    [WALLPAPER_CHECKS]     = {RGB(7, 7, 7), RGB_WHITE},
     [WALLPAPER_POKECENTER] = {RGB(7, 7, 7), RGB_WHITE},
     [WALLPAPER_MACHINE]    = {RGB(7, 7, 7), RGB_WHITE},
     [WALLPAPER_PLAIN]      = {RGB(7, 7, 7), RGB_WHITE},
@@ -190,7 +190,7 @@ static const struct Wallpaper sWallpapers[WALLPAPER_COUNT - 1] =
     [WALLPAPER_SEAFLOOR]   = WALLPAPER_ENTRY(Seafloor),
     [WALLPAPER_RIVER]      = WALLPAPER_ENTRY(River),
     [WALLPAPER_SKY]        = WALLPAPER_ENTRY(Sky),
-    [WALLPAPER_POLKADOT]   = WALLPAPER_ENTRY(PolkaDot),
+    [WALLPAPER_CHECKS]     = WALLPAPER_ENTRY(Checks),
     [WALLPAPER_POKECENTER] = WALLPAPER_ENTRY(Pokecenter),
     [WALLPAPER_MACHINE]    = WALLPAPER_ENTRY(Machine),
     [WALLPAPER_PLAIN]      = WALLPAPER_ENTRY(Plain),
