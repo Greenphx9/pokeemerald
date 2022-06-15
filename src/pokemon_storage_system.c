@@ -147,6 +147,8 @@ enum {
     MENU_POKECENTER,
     MENU_MACHINE,
     MENU_SIMPLE,
+    MENU_NOSTALGIA_1,
+    MENU_NOSTALGIA_2,
 };
 #define MENU_WALLPAPER_SETS_START MENU_SCENERY_1
 #define MENU_WALLPAPERS_START MENU_FOREST
@@ -4364,6 +4366,8 @@ static void AddWallpapersMenu(u8 wallpaperSet)
     case MENU_SCENERY_3 - MENU_WALLPAPER_SETS_START:
         SetMenuText(MENU_MACHINE);
         SetMenuText(MENU_SIMPLE);
+        SetMenuText(MENU_NOSTALGIA_1);
+        SetMenuText(MENU_NOSTALGIA_2);
         break;
     case MENU_ETCETERA - MENU_WALLPAPER_SETS_START:
         break;
@@ -7974,6 +7978,8 @@ static const u8 *const sMenuTexts[] =
     [MENU_POKECENTER] = gPCText_Pokecenter,
     [MENU_MACHINE]    = gPCText_Machine,
     [MENU_SIMPLE]     = gPCText_Simple,
+    [MENU_NOSTALGIA_1]= gPCText_Nostalgia1,
+    [MENU_NOSTALGIA_2]= gPCText_Nostalgia2,
 };
 
 static void SetMenuText(u8 textId)

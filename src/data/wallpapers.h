@@ -15,6 +15,8 @@ enum {
     WALLPAPER_POKECENTER,
     WALLPAPER_MACHINE,
     WALLPAPER_PLAIN,
+    WALLPAPER_NOSTALGIA_1,
+    WALLPAPER_NOSTALGIA_2,
     WALLPAPER_FRIENDS, // The one received as a gift from Walda's parents.
     WALLPAPER_COUNT
 };
@@ -147,6 +149,22 @@ static const u16 sWallpaperPalettes_Plain[][16] =
 static const u32 sWallpaperTiles_Plain[] = INCBIN_U32("graphics/pokemon_storage/wallpapers/plain/tiles.4bpp.lz");
 static const u32 sWallpaperTilemap_Plain[] = INCBIN_U32("graphics/pokemon_storage/wallpapers/plain/tilemap.bin.lz");
 
+static const u16 sWallpaperPalettes_Nostalgia1[][16] =
+{
+    INCBIN_U16("graphics/pokemon_storage/wallpapers/nostalgia1/bg.gbapal"),
+    INCBIN_U16("graphics/pokemon_storage/wallpapers/nostalgia1/bg.gbapal"),
+};
+static const u32 sWallpaperTiles_Nostalgia1[] = INCBIN_U32("graphics/pokemon_storage/wallpapers/nostalgia1/tiles.4bpp.lz");
+static const u32 sWallpaperTilemap_Nostalgia1[] = INCBIN_U32("graphics/pokemon_storage/wallpapers/nostalgia1/tilemap.bin.lz");
+
+static const u16 sWallpaperPalettes_Nostalgia2[][16] =
+{
+    INCBIN_U16("graphics/pokemon_storage/wallpapers/nostalgia2/bg.gbapal"),
+    INCBIN_U16("graphics/pokemon_storage/wallpapers/nostalgia2/bg.gbapal"),
+};
+static const u32 sWallpaperTiles_Nostalgia2[] = INCBIN_U32("graphics/pokemon_storage/wallpapers/nostalgia2/tiles.4bpp.lz");
+static const u32 sWallpaperTilemap_Nostalgia2[] = INCBIN_U32("graphics/pokemon_storage/wallpapers/nostalgia2/tilemap.bin.lz");
+
 // 12x18 tilemap
 static const u32 sWallpaperTilemap_Unused[] = INCBIN_U32("graphics/pokemon_storage/wallpapers/unused.bin");
 
@@ -169,6 +187,8 @@ static const u16 sBoxTitleColors[WALLPAPER_COUNT][2] =
     [WALLPAPER_POKECENTER] = {RGB(7, 7, 7), RGB_WHITE},
     [WALLPAPER_MACHINE]    = {RGB(7, 7, 7), RGB_WHITE},
     [WALLPAPER_PLAIN]      = {RGB(7, 7, 7), RGB_WHITE},
+    [WALLPAPER_NOSTALGIA_1]= {RGB(7, 7, 7), RGB_WHITE},
+    [WALLPAPER_NOSTALGIA_2]= {RGB(7, 7, 7), RGB_WHITE},
     [WALLPAPER_FRIENDS]    = {RGB(7, 7, 7), RGB_WHITE}
 };
 
@@ -194,6 +214,8 @@ static const struct Wallpaper sWallpapers[WALLPAPER_COUNT - 1] =
     [WALLPAPER_POKECENTER] = WALLPAPER_ENTRY(Pokecenter),
     [WALLPAPER_MACHINE]    = WALLPAPER_ENTRY(Machine),
     [WALLPAPER_PLAIN]      = WALLPAPER_ENTRY(Plain),
+    [WALLPAPER_NOSTALGIA_1]= WALLPAPER_ENTRY(Nostalgia1),
+    [WALLPAPER_NOSTALGIA_2]= WALLPAPER_ENTRY(Nostalgia2),
 };
 
 static const u8 sArrow_Gfx[] = INCBIN_U8("graphics/pokemon_storage/arrow.4bpp");

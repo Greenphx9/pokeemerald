@@ -557,6 +557,13 @@ $(WALLPAPERGFXDIR)/machine/tiles.4bpp: $(WALLPAPERGFXDIR)/machine/bg.4bpp
 $(WALLPAPERGFXDIR)/plain/tiles.4bpp: $(WALLPAPERGFXDIR)/plain/bg.4bpp
 	@cat $^ >$@
 
+$(WALLPAPERGFXDIR)/nostalgia1/tiles.4bpp: $(WALLPAPERGFXDIR)/nostalgia1/bg.4bpp
+	@cat $^ >$@
+
+$(WALLPAPERGFXDIR)/nostalgia2/tiles.4bpp: $(WALLPAPERGFXDIR)/nostalgia2/bg.4bpp
+	@cat $^ >$@
+
+
 $(WALLPAPERGFXDIR)/friends_frame1.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 57
 

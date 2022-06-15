@@ -2046,6 +2046,8 @@ extern const u8 gPCText_Checks[];
 extern const u8 gPCText_Pokecenter[];
 extern const u8 gPCText_Machine[];
 extern const u8 gPCText_Simple[];
+extern const u8 gPCText_Nostalgia1[];
+extern const u8 gPCText_Nostalgia2[];
 extern const u8 gText_PartyFull[];
 extern const u8 gText_Box[];
 extern const u8 gText_JustOnePkmn[];
