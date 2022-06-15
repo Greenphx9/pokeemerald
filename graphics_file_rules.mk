@@ -509,46 +509,25 @@ graphics/birch_speech/unused_beauty.4bpp: %.4bpp: %.png
 
 ### Pokémon Storage System ###
 
-$(WALLPAPERGFXDIR)/forest/frame.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 55
-
-$(WALLPAPERGFXDIR)/forest/tiles.4bpp: $(WALLPAPERGFXDIR)/forest/frame.4bpp $(WALLPAPERGFXDIR)/forest/bg.4bpp
+$(WALLPAPERGFXDIR)/forest/tiles.4bpp: $(WALLPAPERGFXDIR)/forest/bg.4bpp
 	@cat $^ >$@
 
-$(WALLPAPERGFXDIR)/city/frame.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 52
-
-$(WALLPAPERGFXDIR)/city/tiles.4bpp: $(WALLPAPERGFXDIR)/city/frame.4bpp $(WALLPAPERGFXDIR)/city/bg.4bpp
+$(WALLPAPERGFXDIR)/city/tiles.4bpp: $(WALLPAPERGFXDIR)/city/bg.4bpp
 	@cat $^ >$@
 
-$(WALLPAPERGFXDIR)/desert/tiles.4bpp: $(WALLPAPERGFXDIR)/desert/frame.4bpp $(WALLPAPERGFXDIR)/desert/bg.4bpp
+$(WALLPAPERGFXDIR)/desert/tiles.4bpp: $(WALLPAPERGFXDIR)/desert/bg.4bpp
 	@cat $^ >$@
 
-$(WALLPAPERGFXDIR)/savanna/frame.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 45
-
-$(WALLPAPERGFXDIR)/savanna/bg.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 23
-
-$(WALLPAPERGFXDIR)/savanna/tiles.4bpp: $(WALLPAPERGFXDIR)/savanna/frame.4bpp $(WALLPAPERGFXDIR)/savanna/bg.4bpp
+$(WALLPAPERGFXDIR)/savanna/tiles.4bpp: $(WALLPAPERGFXDIR)/savanna/bg.4bpp
 	@cat $^ >$@
 
-$(WALLPAPERGFXDIR)/crag/frame.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 49
-
-$(WALLPAPERGFXDIR)/crag/tiles.4bpp: $(WALLPAPERGFXDIR)/crag/frame.4bpp $(WALLPAPERGFXDIR)/crag/bg.4bpp
+$(WALLPAPERGFXDIR)/crag/tiles.4bpp: $(WALLPAPERGFXDIR)/crag/bg.4bpp
 	@cat $^ >$@
 
-$(WALLPAPERGFXDIR)/volcano/frame.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 56
-
-$(WALLPAPERGFXDIR)/volcano/tiles.4bpp: $(WALLPAPERGFXDIR)/volcano/frame.4bpp $(WALLPAPERGFXDIR)/volcano/bg.4bpp
+$(WALLPAPERGFXDIR)/volcano/tiles.4bpp: $(WALLPAPERGFXDIR)/volcano/bg.4bpp
 	@cat $^ >$@
 
-$(WALLPAPERGFXDIR)/snow/frame.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -num_tiles 57
-
-$(WALLPAPERGFXDIR)/snow/tiles.4bpp: $(WALLPAPERGFXDIR)/snow/frame.4bpp $(WALLPAPERGFXDIR)/snow/bg.4bpp
+$(WALLPAPERGFXDIR)/snow/tiles.4bpp: $(WALLPAPERGFXDIR)/snow/bg.4bpp
 	@cat $^ >$@
 
 $(WALLPAPERGFXDIR)/cave/frame.4bpp: %.4bpp: %.png

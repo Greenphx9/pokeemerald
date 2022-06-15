@@ -4348,24 +4348,24 @@ static void AddWallpapersMenu(u8 wallpaperSet)
         SetMenuText(MENU_CITY);
         SetMenuText(MENU_DESERT);
         SetMenuText(MENU_SAVANNA);
-        break;
-    case MENU_SCENERY_2 - MENU_WALLPAPER_SETS_START:
         SetMenuText(MENU_CRAG);
         SetMenuText(MENU_VOLCANO);
         SetMenuText(MENU_SNOW);
-        SetMenuText(MENU_CAVE);
         break;
-    case MENU_SCENERY_3 - MENU_WALLPAPER_SETS_START:
+    case MENU_SCENERY_2 - MENU_WALLPAPER_SETS_START:
+        SetMenuText(MENU_CAVE);
         SetMenuText(MENU_BEACH);
         SetMenuText(MENU_SEAFLOOR);
         SetMenuText(MENU_RIVER);
         SetMenuText(MENU_SKY);
-        break;
-    case MENU_ETCETERA - MENU_WALLPAPER_SETS_START:
         SetMenuText(MENU_POLKADOT);
         SetMenuText(MENU_POKECENTER);
+        break;
+    case MENU_SCENERY_3 - MENU_WALLPAPER_SETS_START:
         SetMenuText(MENU_MACHINE);
         SetMenuText(MENU_SIMPLE);
+        break;
+    case MENU_ETCETERA - MENU_WALLPAPER_SETS_START:
         break;
     }
     AddMenu();

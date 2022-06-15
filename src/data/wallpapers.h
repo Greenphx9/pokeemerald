@@ -18,11 +18,11 @@ enum {
     WALLPAPER_FRIENDS, // The one received as a gift from Walda's parents.
     WALLPAPER_COUNT
 };
-#define MAX_DEFAULT_WALLPAPER WALLPAPER_SAVANNA
+#define MAX_DEFAULT_WALLPAPER WALLPAPER_SKY
 
 static const u16 sWallpaperPalettes_Forest[][16] =
 {
-    INCBIN_U16("graphics/pokemon_storage/wallpapers/forest/frame.gbapal"),
+    INCBIN_U16("graphics/pokemon_storage/wallpapers/forest/bg.gbapal"),
     INCBIN_U16("graphics/pokemon_storage/wallpapers/forest/bg.gbapal"),
 };
 static const u32 sWallpaperTiles_Forest[] = INCBIN_U32("graphics/pokemon_storage/wallpapers/forest/tiles.4bpp.lz");
@@ -30,7 +30,7 @@ static const u32 sWallpaperTilemap_Forest[] = INCBIN_U32("graphics/pokemon_stora
 
 static const u16 sWallpaperPalettes_City[][16] =
 {
-    INCBIN_U16("graphics/pokemon_storage/wallpapers/city/frame.gbapal"),
+    INCBIN_U16("graphics/pokemon_storage/wallpapers/city/bg.gbapal"),
     INCBIN_U16("graphics/pokemon_storage/wallpapers/city/bg.gbapal"),
 };
 static const u32 sWallpaperTiles_City[] = INCBIN_U32("graphics/pokemon_storage/wallpapers/city/tiles.4bpp.lz");
@@ -38,7 +38,7 @@ static const u32 sWallpaperTilemap_City[] = INCBIN_U32("graphics/pokemon_storage
 
 static const u16 sWallpaperPalettes_Desert[][16] =
 {
-    INCBIN_U16("graphics/pokemon_storage/wallpapers/desert/frame.gbapal"),
+    INCBIN_U16("graphics/pokemon_storage/wallpapers/desert/bg.gbapal"),
     INCBIN_U16("graphics/pokemon_storage/wallpapers/desert/bg.gbapal"),
 };
 static const u32 sWallpaperTiles_Desert[] = INCBIN_U32("graphics/pokemon_storage/wallpapers/desert/tiles.4bpp.lz");
@@ -46,7 +46,7 @@ static const u32 sWallpaperTilemap_Desert[] = INCBIN_U32("graphics/pokemon_stora
 
 static const u16 sWallpaperPalettes_Savanna[][16] =
 {
-    INCBIN_U16("graphics/pokemon_storage/wallpapers/savanna/frame.gbapal"),
+    INCBIN_U16("graphics/pokemon_storage/wallpapers/savanna/bg.gbapal"),
     INCBIN_U16("graphics/pokemon_storage/wallpapers/savanna/bg.gbapal"),
 };
 static const u32 sWallpaperTiles_Savanna[] = INCBIN_U32("graphics/pokemon_storage/wallpapers/savanna/tiles.4bpp.lz");
@@ -54,7 +54,7 @@ static const u32 sWallpaperTilemap_Savanna[] = INCBIN_U32("graphics/pokemon_stor
 
 static const u16 sWallpaperPalettes_Crag[][16] =
 {
-    INCBIN_U16("graphics/pokemon_storage/wallpapers/crag/frame.gbapal"),
+    INCBIN_U16("graphics/pokemon_storage/wallpapers/crag/bg.gbapal"),
     INCBIN_U16("graphics/pokemon_storage/wallpapers/crag/bg.gbapal"),
 };
 static const u32 sWallpaperTiles_Crag[] = INCBIN_U32("graphics/pokemon_storage/wallpapers/crag/tiles.4bpp.lz");
@@ -62,7 +62,7 @@ static const u32 sWallpaperTilemap_Crag[] = INCBIN_U32("graphics/pokemon_storage
 
 static const u16 sWallpaperPalettes_Volcano[][16] =
 {
-    INCBIN_U16("graphics/pokemon_storage/wallpapers/volcano/frame.gbapal"),
+    INCBIN_U16("graphics/pokemon_storage/wallpapers/volcano/bg.gbapal"),
     INCBIN_U16("graphics/pokemon_storage/wallpapers/volcano/bg.gbapal"),
 };
 static const u32 sWallpaperTiles_Volcano[] = INCBIN_U32("graphics/pokemon_storage/wallpapers/volcano/tiles.4bpp.lz");
@@ -70,7 +70,7 @@ static const u32 sWallpaperTilemap_Volcano[] = INCBIN_U32("graphics/pokemon_stor
 
 static const u16 sWallpaperPalettes_Snow[][16] =
 {
-    INCBIN_U16("graphics/pokemon_storage/wallpapers/snow/frame.gbapal"),
+    INCBIN_U16("graphics/pokemon_storage/wallpapers/snow/bg.gbapal"),
     INCBIN_U16("graphics/pokemon_storage/wallpapers/snow/bg.gbapal"),
 };
 static const u32 sWallpaperTiles_Snow[] = INCBIN_U32("graphics/pokemon_storage/wallpapers/snow/tiles.4bpp.lz");
