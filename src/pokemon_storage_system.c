@@ -5404,7 +5404,7 @@ static void LoadWallpaperGfx(u8 boxId, s8 direction)
             LoadPalette(wallpaper->palettes, (sStorage->wallpaperOffset * 32) + 0x40, 0x40);
         else
             CpuCopy16(wallpaper->palettes, &gPlttBufferUnfaded[(sStorage->wallpaperOffset * 32) + 0x40], 0x40);
-
+        tilesSize = tilesSize * 2;
         sStorage->wallpaperTiles = malloc_and_decompress(wallpaper->tiles, &tilesSize);
         LoadBgTiles(2, sStorage->wallpaperTiles, tilesSize, sStorage->wallpaperOffset << 8);
     }
